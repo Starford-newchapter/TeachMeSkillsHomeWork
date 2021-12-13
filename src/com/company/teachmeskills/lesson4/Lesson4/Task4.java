@@ -1,11 +1,10 @@
-package com.company.teachmeskills.lesson4;
+package com.company.teachmeskills.lesson4.Lesson4;
 
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
-
-public class Task1 {
+public class Task4 {
 
 
     private static int[][] generateArray() {
@@ -40,18 +39,18 @@ public class Task1 {
 
 
     public static void main(String[] args) {
-        countSumEvenElementsMainDiagonal();
+        countSumEvenElementsSideDiagonal();
 
     }
 
-    private static void countSumEvenElementsMainDiagonal() {
+    private static void countSumEvenElementsSideDiagonal() {
         int[][] array = generateArray();
         printArray(array);
         int sum = 0;
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                if (i == j) {
+                if ((i + j) < array.length - 1) {
                     if (array[i][j] % 2 == 0) {
                         sum += array[i][j];
                     }
@@ -62,12 +61,5 @@ public class Task1 {
         }
 
         System.out.println(sum);
-
-
     }
-
-
 }
-
-
-

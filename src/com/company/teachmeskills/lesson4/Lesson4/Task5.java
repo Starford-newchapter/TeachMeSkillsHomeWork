@@ -1,11 +1,11 @@
-package com.company.teachmeskills.lesson4;
+package com.company.teachmeskills.lesson4.Lesson4;
 
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
-public class Task2 {
 
+public class Task5 {
 
     private static int[][] generateArray() {
         System.out.println("Введите размерность массива ");
@@ -39,28 +39,27 @@ public class Task2 {
 
 
     public static void main(String[] args) {
-        printOddElementsUnderMainDiagonal();
+        transportMatrix();
+
+
     }
 
-    private static void printOddElementsUnderMainDiagonal() {
+    //Учтем заранее что матрица квадратная
+    public static void transportMatrix() {
         int[][] array = generateArray();
         printArray(array);
 
+        int temp;
+
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                if (j <= i) {
-                    if (array[i][j] % 2 != 0) {
-                        System.out.println(array[i][j]);
-                    }
-
-                }
+            for (int j = i; j < array[i].length; j++) {
+                temp = array[i][j];
+                array[i][j] = array[j][i];
+                array[j][i] = temp;
             }
+
         }
+
+        printArray(array);
     }
-
-
 }
-
-
-
-

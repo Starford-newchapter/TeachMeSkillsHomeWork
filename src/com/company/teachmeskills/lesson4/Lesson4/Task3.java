@@ -1,4 +1,4 @@
-package com.company.teachmeskills.lesson4;
+package com.company.teachmeskills.lesson4.Lesson4;
 
 import java.util.Arrays;
 import java.util.Scanner;

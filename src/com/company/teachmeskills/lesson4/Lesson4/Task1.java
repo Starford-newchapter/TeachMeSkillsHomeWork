@@ -1,11 +1,12 @@
-package com.company.teachmeskills.lesson4;
+package com.company.teachmeskills.lesson4.Lesson4;
 
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
 
-public class Task5 {
+public class Task1 {
+
 
     private static int[][] generateArray() {
         System.out.println("Введите размерность массива ");
@@ -39,27 +40,34 @@ public class Task5 {
 
 
     public static void main(String[] args) {
-        transportMatrix();
-
+        countSumEvenElementsMainDiagonal();
 
     }
 
-    //Учтем заранее что матрица квадратная
-    public static void transportMatrix() {
+    private static void countSumEvenElementsMainDiagonal() {
         int[][] array = generateArray();
         printArray(array);
-
-        int temp;
+        int sum = 0;
 
         for (int i = 0; i < array.length; i++) {
-            for (int j = i; j < array[i].length; j++) {
-                temp = array[i][j];
-                array[i][j] = array[j][i];
-                array[j][i] = temp;
+            for (int j = 0; j < array[i].length; j++) {
+                if (i == j) {
+                    if (array[i][j] % 2 == 0) {
+                        sum += array[i][j];
+                    }
+                }
+
             }
 
         }
 
-        printArray(array);
+        System.out.println(sum);
+
+
     }
+
+
 }
+
+
+
