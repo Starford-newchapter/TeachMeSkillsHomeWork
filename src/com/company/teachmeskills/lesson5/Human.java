@@ -8,6 +8,14 @@ import java.util.Date;
 import java.util.Locale;
 
 public class Human {
+    private String firstName;
+    private String lastLame;
+    private LocalDate dateBirth;
+    private double weight;
+    TShirt tshirt;
+    Singlet singlet;
+
+
     public Human(String firstName, String lastLame, LocalDate dateBirth, double weight, TShirt tshirt, Singlet singlet) {
         this.firstName = firstName;
         this.lastLame = lastLame;
@@ -17,12 +25,6 @@ public class Human {
         this.singlet = singlet;
     }
 
-    private String firstName;
-    private String lastLame;
-    private LocalDate dateBirth;
-    private double weight;
-    TShirt tshirt;
-    Singlet singlet;
 
     public void printAge() {
         System.out.println("Мне " + Period.between(dateBirth, LocalDate.from(LocalDateTime.now())).getYears());

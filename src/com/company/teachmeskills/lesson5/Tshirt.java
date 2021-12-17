@@ -6,9 +6,16 @@ import java.time.Year;
 import java.util.Locale;
 
 class TShirt {
-
-
+    private String color;
+    private String print;
     private String size;
+
+    public TShirt(String size, String color, String print) {
+        this.size = size;
+        this.color = color;
+        this.print = print;
+    }
+
 
     public String getSize() {
         return size;
@@ -21,15 +28,6 @@ class TShirt {
     public String getPrint() {
         return print;
     }
-
-    public TShirt(String size, String color, String print) {
-        this.size = size;
-        this.color = color;
-        this.print = print;
-    }
-
-    private String color;
-    private String print;
 
 
 }
