@@ -1,19 +1,14 @@
-package com.company.teachmeskills.lesson5;
+package com.company.teachmeskills.lesson5.Task1;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.Period;
-import java.time.Year;
-import java.util.Date;
-import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) {
         TShirt tShirt1 = new TShirt("s", "black", "Life is good!");
-        Singlet singlet1 = new Singlet(enumSize.m, "Red");
+        Singlet singlet1 = new Singlet(EnumSize.s,"Red");
 
         TShirt tShirt2 = new TShirt("l", "White", "OFFWHITE");
-        Singlet singlet2 = new Singlet(enumSize.s, "Pink");
+        Singlet singlet2 = new Singlet(EnumSize.s, "Pink");
 
         LocalDate dateBirth = LocalDate.of(2000, 6, 15);
 

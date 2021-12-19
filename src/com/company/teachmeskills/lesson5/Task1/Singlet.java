@@ -1,16 +1,16 @@
-package com.company.teachmeskills.lesson5;
+package com.company.teachmeskills.lesson5.Task1;
 
 public class Singlet {
-    private enumSize sizeSinglet;
+    private EnumSize sizeSinglet;
 
     private String color;
 
-    public Singlet(enumSize sizeSinglet, String color) {
+    public Singlet(EnumSize sizeSinglet, String color) {
         this.sizeSinglet = sizeSinglet;
         this.color = color;
     }
 
-    public enumSize getSizeSinglet() {
+    public EnumSize getSizeSinglet() {
         return sizeSinglet;
     }
 

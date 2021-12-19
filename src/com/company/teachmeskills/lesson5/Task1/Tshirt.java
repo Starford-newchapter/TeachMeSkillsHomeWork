@@ -1,4 +1,4 @@
-package com.company.teachmeskills.lesson5;
+package com.company.teachmeskills.lesson5.Task1;
 
 import java.time.LocalDate;
 import java.time.Period;

@@ -1,19 +1,16 @@
-package com.company.teachmeskills.lesson5;
+package com.company.teachmeskills.lesson5.Task1;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Period;
-import java.time.Year;
-import java.util.Date;
-import java.util.Locale;
 
 public class Human {
     private String firstName;
     private String lastLame;
     private LocalDate dateBirth;
     private double weight;
-    TShirt tshirt;
-    Singlet singlet;
+    private TShirt tshirt;
+    private Singlet singlet;
 
 
     public Human(String firstName, String lastLame, LocalDate dateBirth, double weight, TShirt tshirt, Singlet singlet) {
