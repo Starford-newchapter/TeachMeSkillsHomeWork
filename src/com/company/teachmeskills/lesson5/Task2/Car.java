@@ -5,7 +5,7 @@ public class Car {
     private MachineDrive machineDrive;
     private Engine engine;
     private Transmission transmission;
-    Headlamp headlamp;
+    private Headlamp headlamp;
 
 
     public Car(int rudderAngle, MachineDrive machineDrive, Engine engine, Transmission transmission, Headlamp headlamp) {

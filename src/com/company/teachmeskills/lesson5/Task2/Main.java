@@ -12,8 +12,8 @@ public class Main {
         car1.pressBrakePedal();
         car1.turnSteeringWheel(31);
 
-        car1.headlamp.turnOffHeadlight();
-        car1.switchMod(TransmissionMode.Drive);
+        headLamp1.turnOffHeadlight();
+        car1.switchMod(TransmissionMode.Parking);
 
 
         System.out.println(car1.toString());
