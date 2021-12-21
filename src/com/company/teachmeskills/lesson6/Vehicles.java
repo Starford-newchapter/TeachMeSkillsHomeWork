@@ -16,7 +16,9 @@ public abstract class Vehicles {
 
     public abstract void printDetails();
 
-    public abstract double convertInPower();
+    public  double convertInPower(){
+        return power * 0.74;
+    }
 
 
 }

@@ -11,10 +11,6 @@ public class CargoTransport extends LandTransport {
     }
 
 
-    @Override
-    public double convertInPower() {
-        return power * 0.74;
-    }
 
     public void printDetails() {
         System.out.println("Характеристики Грузового автомобиля:");

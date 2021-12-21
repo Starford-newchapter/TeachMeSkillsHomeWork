@@ -24,10 +24,7 @@ public class CivilTransport extends AirTransport {
     }
 
 
-    @Override
-    public double convertInPower() {
-        return power * 0.74;
-    }
+
 
     public void liftPassengers(int passengers) {
         if (passengers <= countPassengers) {

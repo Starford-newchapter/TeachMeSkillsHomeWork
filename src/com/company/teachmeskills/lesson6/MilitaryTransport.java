@@ -25,10 +25,7 @@ public class MilitaryTransport extends AirTransport {
 
     }
 
-    @Override
-    public double convertInPower() {
-        return power * 0.74;
-    }
+
 
     public void shoot() {
         if (countRockets > 0) {

@@ -10,10 +10,8 @@ public class PassengerСar extends LandTransport {
         this.countPassengers = countPassengers;
     }
 
-    @Override
-    public double convertInPower() {
-        return power * 0.74;
-    }
+
+
 
     @Override
     public void printDetails() {
