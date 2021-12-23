@@ -1,4 +1,4 @@
-package com.company.teachmeskills.lesson7;
+package com.company.teachmeskills.lesson7.AdditionalTask1;
 
 public class Cylinder extends SolidOfRevolution {
     double height;

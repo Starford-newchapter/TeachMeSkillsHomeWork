@@ -1,7 +1,6 @@
-package com.company.teachmeskills.lesson7;
+package com.company.teachmeskills.lesson7.AdditionalTask1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Box extends Shape {
     private double volumeBox;
