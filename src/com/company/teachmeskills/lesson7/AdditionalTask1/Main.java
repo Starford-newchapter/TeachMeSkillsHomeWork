@@ -4,10 +4,10 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Shape pyramid = new Pyramid(10, 20);
-        Shape cylinder = new Cylinder(5, 10);
-        Shape solidOfRevolution = new SolidOfRevolution(10, 4);
-        Shape ball = new Bail(5);
+        Pyramid pyramid = new Pyramid(10, 20);
+        Cylinder cylinder = new Cylinder(5, 10);
+        SolidOfRevolution solidOfRevolution = new SolidOfRevolution(10, 4);
+        Bail ball = new Bail(5);
 
         Box box = new Box(900);
 
