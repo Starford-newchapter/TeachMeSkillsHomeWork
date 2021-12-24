@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class Box extends Shape {
     private double availableVolumeBox;
-    private double volume;
+
     ArrayList<Shape> shapes = new ArrayList<>();
 
     public Box(double availableVolumeBox) {
         this.availableVolumeBox = availableVolumeBox;
-        this.volume=availableVolumeBox;
+
     }
 
     public boolean add(Shape shape) {
