@@ -15,8 +15,10 @@ public class Main {
             System.out.println("Объем бокса " + box.getVolumeBox());
             System.out.println("Объём фигуры " + shape.getVolume());
             System.out.println(box.add(shape));
+            System.out.println("Объем бокса " + box.getVolumeBox());
 
         }
+        System.out.println("Объем бокса " + box.getVolumeBox());
 
 
     }

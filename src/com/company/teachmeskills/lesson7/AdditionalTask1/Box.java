@@ -3,35 +3,36 @@ package com.company.teachmeskills.lesson7.AdditionalTask1;
 import java.util.ArrayList;
 
 public class Box extends Shape {
-    private double volumeBox;
+    private double availableVolumeBox;
+
 
     private ArrayList<Shape> shapes = new ArrayList<>();
 
-    public Box(double volumeBox) {
-
-        super(volumeBox);
-        this.volumeBox = volumeBox;
-    }
-
-    public double getVolumeBox() {
-        return volumeBox;
+    public Box(double availableVolumeBox) {
+        super(availableVolumeBox);
+        this.availableVolumeBox = availableVolumeBox;
     }
 
     public boolean add(Shape shape) {
 
-        if (volumeBox >= shape.getVolume()) {
+        if (availableVolumeBox >= shape.getVolume()) {
             shapes.add(shape);
-            volumeBox -= shape.getVolume();
+            availableVolumeBox -= shape.getVolume();
             return true;
 
         } else {
             return false;
 
         }
-
-
     }
+
+    public double getVolumeBox() {
+        return availableVolumeBox;
+    }
+
+
 }
+
 
 
 

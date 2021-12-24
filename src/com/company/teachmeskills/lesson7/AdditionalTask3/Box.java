@@ -1,15 +1,16 @@
-package com.company.teachmeskills.lesson7.AdditionalTask2;
+package com.company.teachmeskills.lesson7.AdditionalTask3;
 
 import java.util.ArrayList;
 
-public class Box extends Shape {
+public class Box implements Shape {
     private double availableVolumeBox;
-    private double volume;
+
     ArrayList<Shape> shapes = new ArrayList<>();
 
     public Box(double availableVolumeBox) {
         this.availableVolumeBox = availableVolumeBox;
-        this.volume=availableVolumeBox;
+
+
     }
 
     public boolean add(Shape shape) {
@@ -22,12 +23,8 @@ public class Box extends Shape {
         }
     }
 
-    public double getVolumeBox() {
-        return availableVolumeBox;
-    }
-
     @Override
-    double getVolume() {
+    public double getVolume() {
         return availableVolumeBox;
     }
 }
