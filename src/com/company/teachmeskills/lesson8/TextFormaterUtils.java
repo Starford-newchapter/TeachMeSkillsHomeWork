@@ -26,8 +26,7 @@ public class TextFormaterUtils {
     }
 
     public static boolean isPalindrome() {
-        s = s.toLowerCase();
-        String[] str = s.split(" ");
+        String[] str = s.toLowerCase().split(" ");
         for (int i = 0; i < str.length; i++) {
             if (str[i].equals(new StringBuffer(str[i]).reverse().toString())) {
                 return true;

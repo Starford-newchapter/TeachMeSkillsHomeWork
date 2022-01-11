@@ -29,8 +29,7 @@ public class StringTask {
     }
 
     public void printPalindrome() {
-        str = str.toLowerCase();
-        String[] str2 = str.split(" ");
+        String[] str2 = str.toLowerCase().split(" ");
         for (int i = 0; i < str2.length; i++) {
             if (str2[i].equals(new StringBuffer(str2[i]).reverse().toString())) {
                 System.out.println(str2[i]);
@@ -45,8 +44,6 @@ public class StringTask {
         for (int i = 0; i < sentences.length; i++) {
             words[i] = sentences[i].split("[\\p{Punct}\\s]+");
         }
-
-
 
 
         for (int i = 0; i < words.length; i++) {
