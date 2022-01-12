@@ -12,22 +12,14 @@ public class Main {
         Item car2=new Item(1, "Машина", 70);
 
 
-        Store store = new Store();
-        store.addItems(car);
-        store.addItems(apple);
-        store.addItems(gun);
-        store.addItems(laptop);
-
-        System.out.println();
-
-        System.out.println(store.listOfItems);
-        System.out.println();
 
 
 
 
-        store.changelistOfItems(car2);
-        System.out.println(store.listOfItems);
+
+
+
+
 
 
 
