@@ -1,11 +1,13 @@
 package com.company.teachmeskills.lesson9;
 
-public class Item {
-    private int id;
+import java.util.Comparator ;
+
+public class Item  implements Comparable<Item>{
+    private Integer id;
     private String name;
     private double price;
 
-    public Item(int id, String name, double price) {
+    public Item(Integer id, String name, double price) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -31,6 +33,16 @@ public class Item {
                 ", price=" + price +
                 '}';
     }
+
+    @Override
+    public int compareTo(Item o) {
+        return id.compareTo(o.getId());
+    }
 }
+
+
+
+
+
 
 
