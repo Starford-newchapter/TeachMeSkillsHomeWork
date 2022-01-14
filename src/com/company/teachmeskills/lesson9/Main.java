@@ -7,13 +7,13 @@ public class Main {
         PriceComparator priceComparator = new PriceComparator();
 
 
-        Item car = new Item(2, "яашина", 43.30);
+        Item car = new Item(2, "Машина", 43.30);
         Item laptop = new Item(1, "Ноутбук", 100);
         Item game = new Item(4, "Fifa 2020", 20.3);
         Item tShirt = new Item(5, "Майка", 50);
         Item car2 = new Item(2, "Машина Грузовая", 30);
 
-        store.listOfItems.add(car);
+        store.addItems(car);
         store.addItems(laptop);
         store.addItems(game);
         store.addItems(car2);
@@ -28,8 +28,6 @@ public class Main {
 
         store.changelistOfItems(car2);
         System.out.println(store.returnListOfItems());
-
-
 
 
     }

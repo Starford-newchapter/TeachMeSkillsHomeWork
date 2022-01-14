@@ -10,10 +10,9 @@ public class PriceComparator implements Comparator<Item> {
         }
         if (o1.getPrice() > o2.getPrice()) {
             return 1;
-        }
-        else {
+        } else {
             return -1;
         }
     }
-    }
+}
 

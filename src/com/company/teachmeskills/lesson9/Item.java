@@ -1,8 +1,8 @@
 package com.company.teachmeskills.lesson9;
 
-import java.util.Comparator ;
+import java.util.Comparator;
 
-public class Item  implements Comparable<Item>{
+public class Item implements Comparable<Item> {
     private Integer id;
     private String name;
     private double price;
