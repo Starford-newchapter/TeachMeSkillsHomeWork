@@ -30,24 +30,6 @@ public class Store {
         }
     }
 
-        /*boolean isIdExist = false;
-        for (int i = 0; i < listOfItems.size(); i++) {
-            if (listOfItems.get(i).getId() == item.getId()) {
-                isIdExist = true;
-
-            }
-        }
-        if (isIdExist) {
-            System.out.println("Товар c Id=" + item.getId() + " в списке уже есть");
-        } else {
-            listOfItems.add(item);
-            System.out.println("Товар " + item.getName() + " добавлен в список");
-
-        }
-
-
-    }*/
-
 
     public List returnListOfItems() {
         return listOfItems;

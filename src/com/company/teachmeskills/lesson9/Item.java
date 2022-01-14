@@ -1,17 +1,23 @@
 package com.company.teachmeskills.lesson9;
 
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Comparator;
 
-public class Item implements Comparable<Item> {
+public class Item {
     private Integer id;
     private String name;
     private double price;
+    private LocalTime time;
 
-    public Item(Integer id, String name, double price) {
+    public Item(Integer id, String name, double price, LocalTime time) {
         this.id = id;
         this.name = name;
         this.price = price;
+        this.time = LocalTime.now();
+
     }
+
 
     public int getId() {
         return id;
@@ -25,6 +31,10 @@ public class Item implements Comparable<Item> {
         return price;
     }
 
+    public LocalTime getTime() {
+        return time;
+    }
+
     @Override
     public String toString() {
         return "Item{" +
@@ -34,11 +44,9 @@ public class Item implements Comparable<Item> {
                 '}';
     }
 
-    @Override
-    public int compareTo(Item o) {
-        return id.compareTo(o.getId());
-    }
 }
+
+
 
 
 
